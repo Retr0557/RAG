@@ -1,0 +1,5 @@
+{
+  "name": "Document Q&A Bot",
+  "description": "An interactive chatbot that allows you to upload a PDF document and ask questions about its content. It uses a Retrieval-Augmented Generation (RAG) approach to find relevant information within the document and provide accurate answers using Gemini.",
+  "requestFramePermissions": []
+}
