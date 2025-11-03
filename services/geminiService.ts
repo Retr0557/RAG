@@ -31,19 +31,18 @@ export const generateAnswerStream = async (
   const model = "gemini-2.5-flash";
 
   const prompt = `
-You are a helpful assistant that answers questions based on the provided document context.
-Your goal is to provide a clear and concise answer using ONLY the information from the context below.
-Format your answer using markdown where appropriate (e.g., lists, bolding).
-If the answer cannot be found in the context, state that you cannot find the answer in the provided document.
-Do not use any external knowledge.
+You are an intelligent document assistant. Your task is to answer questions and perform tasks based on the provided document context.
+You should be flexible. You can answer direct questions, summarize sections, format data into tables or lists, and provide interpretations of the content.
+Base your responses primarily on the information given in the context below. However, you can use your general knowledge to better interpret the text and format your answer effectively.
+Always aim to be helpful and clear. Use markdown for formatting when it enhances readability (e.g., tables, lists, bold text).
 
 --- CONTEXT ---
 ${context}
 --- END CONTEXT ---
 
-QUESTION: ${query}
+USER REQUEST: ${query}
 
-ANSWER:
+RESPONSE:
 `;
 
   try {

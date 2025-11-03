@@ -109,8 +109,8 @@ const Chat: React.FC<ChatProps> = ({ messages, onSendMessage, isLoading, statusM
             className="bg-brand-accent text-white rounded-lg p-3 hover:bg-brand-accent-hover disabled:bg-brand-secondary disabled:cursor-not-allowed transition-colors flex-shrink-0"
             aria-label="Send message"
           >
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
             </svg>
           </button>
         </form>
